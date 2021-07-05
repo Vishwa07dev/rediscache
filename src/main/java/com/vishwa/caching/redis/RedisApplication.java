@@ -24,10 +24,12 @@ public class RedisApplication implements CommandLineRunner {
 		User shubham = new User("Shubham", 2000);
 		User pankaj = new User("Pankaj", 29000);
 		User lewis = new User("Lewis", 550);
+		User akshay = new User("Akshay", 33000);
 
 		userDao.save(shubham);
 		userDao.save(pankaj);
 		userDao.save(lewis);
+		userDao.save(akshay);
 		System.out.println(userDao.findAll());
 	}
 }
